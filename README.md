@@ -29,7 +29,7 @@ elan/ 以下に，(実験参加者ID).eaf という名前で置かれている�
 
 交換と呼ばれる単位ごとに，以下で示されるデータが付与されている．
 詳しくは以下の概要説明ドキュメントを参照のこと．
-https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverview.pdf
+https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverviewOnline.pdf
 
 #### 実験参加者の発話の書き起こし
 #### システム発話とその対話行為
@@ -93,7 +93,7 @@ https://github.com/yoheikikuta/bert-japanese
 言語特徴量（素性）は発話区間に対応するユーザ発話の書き起こしテキストから抽出した．
 
 詳しくは概要説明ドキュメントを参照のこと．
-https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverview.pdf
+https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverviewOnline.pdf
 
 
 ## 4. アンケートデータ
