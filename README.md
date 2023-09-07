@@ -32,11 +32,11 @@ https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverviewOnline.pdf
 #### 実験参加者の発話の書き起こし
 #### システム発話とその対話行為
 #### 心象アノテーション
-3名の第三者アノテータがが付与した (TS: Third Sentiment) ．  
+5名の第三者アノテータがが付与した (TS: Third Sentiment) ．  
 ※2023年9月に2名分を追加公開
 
 #### 話題継続アノテーション
-3名の第三者アノテータがが付与した (TC: Topic Continuance) ．  
+5名の第三者アノテータがが付与した (TC: Topic Continuance) ．  
 ※2023年9月に2名分を追加公開
 
 ## 3. 実験用ダンプファイル
