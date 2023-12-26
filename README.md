@@ -32,7 +32,7 @@ https://www.nii.ac.jp/dsc/idr/rdata/Hazumi/documents/HazumiOverviewOnline.pdf
 #### 実験参加者の発話の書き起こし
 #### システム発話とその対話行為
 #### 心象アノテーション
-5名の第三者アノテータがが付与した (TS: Third Sentiment) ．  
+5名の第三者アノテータがが付与した (UI: User Impression) ．  
 ※2023年9月に2名分を追加公開
 
 #### 話題継続アノテーション
@@ -55,14 +55,17 @@ dumpfiles/
 各列はデータの属性，各行は当該交換で抽出された各特徴量を格納している．1行目はデータの属性名を示す．
 
 
-#### start(exchange), end(exchange):
-ユーザの上半身動画（mp4）における交換（発話対）の開始，終了時間
+#### start(exchange), end(system), end(exchange):
+ユーザの上半身動画（mp4）における交換（発話対）の開始，システムの発話開始，交換（発話対）の終了時刻．
 
-#### TC1~TC3:
-3名により付与されたtopic continuanceのアノテーション値.
+#### UI_*:
+5名により付与されたUser Impression (UI)のアノテーション値．
+※ユーザのSentimentに関するアノテータの印象（例：ユーザは対話を楽しんでいそうか）に対応している．
+※論文で，本人心象（Self Sentiment:SS）と対比して，Third-party Sentiment (TS) と記載しているものに相当す
+る．
 
-#### TS1~TS3:
-3名により付与されたthird sentimentのアノテーション値．
+#### TC_*:
+5名により付与されたtopic continuance (TC)のアノテーション値.
 
 #### Dialogue_act
 システム発話の対話行為タイプが格納されている．
@@ -79,6 +82,9 @@ landmark特徴量はOpenFaceから得られる2次元座標データ(30fps)を�
 ユーザ発話から抽出された言語特徴量が格納されている．
 書き起こしデータ内のユーザ発話から特徴量を抽出した合計785次元である．
 Stanza NLPを使用して形態素解析を行い，1発話内に含まれる品詞ごとの単語数を計算している（17次元）．
+品詞"ADJ"～"X"の定義・説明に関しては以下を参照ください．
+https://universaldependencies.org/u/pos/
+
 また，Wikipediaに含まれるテキストデータより学習されたBERTモデルを利用して，
 1発話（単語列）をベクトルに変換した特徴量も含む．
 ここで，単語列に対する単語埋め込みベクトルの列（BERTの隠れ層から得られた特徴ベクトルの列）に
